@@ -1,0 +1,13 @@
+Minimal mybatis-cdi sample code ready to deploy.
+
+https://github.com/mybatis/cdi
+
+Tested with:
+
+- mybatis 3.4.2
+- mybatis-cdi 1.0.0-beta5
+- Payara 4.1 (Glassfish 4.1)
+- TomEE 7.0.1 Plus (With Derby driver)
+
+
+
