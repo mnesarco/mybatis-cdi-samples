@@ -1,0 +1,4 @@
+nb-configuration.xml
+src/main/webapp/WEB-INF/glassfish-web.xml
+src/main/webapp/WEB-INF/jboss-web.xml
+target/
