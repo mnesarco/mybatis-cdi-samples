@@ -6,9 +6,15 @@
     <title>MyBatis CDI Sample</title>
   </h:head>
   <h:body>
-    <h1>
-      User: #{testBean.user.id} - #{testBean.user.name}
-    </h1>
+    <p>
+      User (Web): #{testBean.user.id} - #{testBean.user.name}
+    </p>
+    <p>
+      User (Stateless): #{testBean.userFromStateless.id} - #{testBean.userFromStateless.name}
+    </p>
+    <p>
+      User (Stateful): #{testBean.userFromStateful.id} - #{testBean.userFromStateful.name}
+    </p>
   </h:body>
 </html>
 

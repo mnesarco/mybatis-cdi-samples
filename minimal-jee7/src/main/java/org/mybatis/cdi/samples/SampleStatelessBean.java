@@ -15,37 +15,20 @@
  */
 package org.mybatis.cdi.samples;
 
-import javax.enterprise.context.RequestScoped;
+import javax.ejb.Stateless;
 import javax.inject.Inject;
-import javax.inject.Named;
 
 /**
- * Sample Bean using a Mapper.
+ *
  * @author Frank D. Martinez M. [mnesarco], Jan 27, 2017
  */
-@RequestScoped
-@Named("testBean")
-public class TestBean {
+@Stateless
+public class SampleStatelessBean {
 
-  @Inject
-  UserMapper userMapper;
+  @Inject UserMapper users;
   
-  @Inject
-  SampleStatefulBean stateful;
-  
-  @Inject
-  SampleStatelessBean stateless;
-  
-  public User getUser() {
-    return userMapper.getUser(1);
+  public User findUser(int id) {
+    return users.getUser(id);
   }
   
-  public User getUserFromStateless() {
-    return stateless.findUser(1);
-  }
-    
-  public User getUserFromStateful() {
-    return stateful.findUser(1);
-  }
-    
 }
