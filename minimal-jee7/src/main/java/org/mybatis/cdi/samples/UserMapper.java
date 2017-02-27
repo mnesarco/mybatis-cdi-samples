@@ -15,14 +15,12 @@
  */
 package org.mybatis.cdi.samples;
 
-import javax.enterprise.context.Dependent;
 import org.mybatis.cdi.Mapper;
 
 /**
  * Sample MyBatis Mapper.
  * @author Frank D. Martinez M. [mnesarco], Jan 27, 2017
  */
-@Dependent
 @Mapper
 public interface UserMapper {
 

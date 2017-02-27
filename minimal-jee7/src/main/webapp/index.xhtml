@@ -7,7 +7,13 @@
   </h:head>
   <h:body>
     <p>
-      User (Web): #{testBean.user.id} - #{testBean.user.name}
+      User (Request Scoped): #{testBean.user.id} - #{testBean.user.name}
+    </p>
+    <p>
+      User (Conversation Scoped): #{conv.user.id} - #{conv.user.name}
+    </p>
+    <p>
+      User (Session Scoped): #{sess.user.id} - #{sess.user.name}
     </p>
     <p>
       User (Stateless): #{testBean.userFromStateless.id} - #{testBean.userFromStateless.name}
