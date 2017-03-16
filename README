@@ -10,4 +10,5 @@ Tested with:
 - TomEE 7.0.1 Plus
 - Wildfly 10.1.0
 - WAS Liberty with Java EE 7 Full Platform 16.0.0.4
+- Oracle WebLogic 12c
 
